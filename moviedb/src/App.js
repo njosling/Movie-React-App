@@ -39,6 +39,7 @@ function App() {
   return (
    <>
     <header>
+      <h1 class="pageTitle">Movie Database</h1>
       <form onSubmit={handleOnSubmit}>
       <input 
         className="search" 
