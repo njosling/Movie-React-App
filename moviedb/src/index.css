@@ -38,14 +38,19 @@ header{
   padding: 0.5rem 1.5rem;
 }
 
+.search:focus{
+  outline: none;
+}
+
 .movie{
   background-color: #373b69;
-  width: 300px;
+  width: 250px;
   margin: 1rem;
   position: relative;
   border-radius: 3px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  font-size: smaller;
 }
 
 .movie img{
@@ -84,3 +89,7 @@ header{
   transform: translateY(0%);
 }
 
+.tag{
+  background-color: #22254b;
+  padding: 0.5rem;
+}
