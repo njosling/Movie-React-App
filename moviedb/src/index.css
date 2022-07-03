@@ -16,17 +16,15 @@ body{
   flex-direction: column;
 }
 
-header form{
+header{
   background-color: #373b69;
-  padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pageTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 120px;
 }
 
 .movie-container{
@@ -36,11 +34,13 @@ header form{
 }
 
 .search{
+  width: 400px;
+  margin-right: 120px;
   background-color: transparent;
   font-family: inherit;
   font-size: 1.2rem;
   border: 1px solid #22254b;
-  color: #ffff;
+  color: rgb(255, 255, 255);
   border-radius: 20px;
   padding: 0.5rem 1.5rem;
 }

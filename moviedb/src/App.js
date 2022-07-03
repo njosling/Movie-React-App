@@ -41,13 +41,12 @@ function App() {
     <header>
       <h1 class="pageTitle">Movie Database</h1>
       <form onSubmit={handleOnSubmit}>
-      <input 
-        className="search" 
-        type="search" 
-        placeholder="Search.."
-        value={searchTerm}
-        onChange={handleOnChange}/>
-        
+          <input 
+          className="search" 
+          type="search" 
+          placeholder="Search a keyword"
+          value={searchTerm}
+          onChange={handleOnChange}/>
       </form>
     </header>
       <div className="movie-container"> 
