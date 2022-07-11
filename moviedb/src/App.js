@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./components/Movie";
 
-const featuredAPI = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=5a2f9ffba4f5565d821d2290fdfd3677&language=en-US&query=joker&page=1";
 
-const searchAPI = "https://api.themoviedb.org/3/search/movie?&api_key=5a2f9ffba4f5565d821d2290fdfd3677&query=";
+const api_key = process.env.REACT_APP_MOVIE_API_KEY
+const featuredAPI = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key="+api_key+"&language=en-US&query=joker&page=1";
+
+const searchAPI = "https://api.themoviedb.org/3/search/movie?&api_key="+api_key+"&query=";
 
 function App() {
   const [movies, setMovies] = useState([]);
